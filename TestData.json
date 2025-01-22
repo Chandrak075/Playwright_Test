@@ -1,0 +1,11 @@
+{
+    "firstname": "Mr. CK",
+    "lastname": "The Legend",
+    "address": "DIL main",
+    "email": "Bhai@bhai.com",
+    "phone": "9999999999",
+    "gender": "male",
+    "hobby":["Cricket","Movies"],
+    "password":"Bhaijaan",
+    "connpassword":"Bhaijaan"
+}
