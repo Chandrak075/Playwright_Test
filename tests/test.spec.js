@@ -18,19 +18,26 @@ test("Invalid login attempts with wrong ID and Password", async ({ page }) => {
 
     // Set timeout to 2 minutes
     await page.waitForTimeout(120000);
-});
+}); // interview task thila
 
 
 
-test.only("Handle Shadow DOM elements", async ({ page }) => {
+test("Handle Shadow DOM elements", async ({ page }) => {
     // await page.goto("https://books-pwakit.appspot.com/");
     // Select the input field inside shadow DOM and type text
     // await page.locator("book-app").locator("input#input").fill("Playwright Testing");
 
     await page.goto("https://www.cigna.com/medicare/")
     await page.waitForTimeout(2000)
-    await page.locator("#zip-input-id #zip-input-id-leaf").fill("11002");
+    await page.locator("div[slot='form'] #zip-input-id-leaf").fill("11002");
     await page.waitForTimeout(2000)
-});
+}); // interview task thila
 
 
+test.only("Shadow dom 2 ", async ({page}) => {
+
+    await page.goto("https://practice.expandtesting.com/shadowdom");
+    let value = await page.locator("#shadow-host #my-btn").innerText();
+    console.log(value);
+    await page.waitForTimeout(3000);
+})
