@@ -5,7 +5,7 @@ const exp = require("constants");
 class HomePage{
     constructor(page) {
         this.page = page
-        this.userName = "#username";
+        this.userName = "#username"
         this.password = "#password"
         this.button="#submit"
         this.title="//h1"
